@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  centraltelefonica:
+    image: ${DOCKER_REGISTRY-}centraltelefonica
+    build:
+      context: .
+      dockerfile: Central Telefonica/Dockerfile
+
